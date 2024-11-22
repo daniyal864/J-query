@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titlE> J query</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <p id="p"> hello world </p>
+    <button id="btn">hide</button>
+    <button id="btn1">show</button>
+    <button id="btn2">show'n hide</button>
+    <button id="btn3"> Fade In </button>
+    <button id="btn4"> Fade out </button>
+    <button id="btn5"> slide up </button>
+    <button id="btn6"> slide down </button>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $("#p").hide();
+            });
+
+            $("#btn1").click(function () {
+                $("#p").show();
+            });
+
+            $("#btn2").click(function () {
+                $("#p").toggle();
+            });
+
+            $("#btn3").click(function () {
+                $("#p").fadeIn();
+            });
+
+            $("#btn4").click(function () {
+                $("#p").fadeOut();
+            });
+
+
+
+
+            $("#btn5").click(function () {
+                $("#p").slideUp();
+            });
+            $("#btn6").click(function () {
+                $("#p").slideDown();
+            });
+        });
+    </script>
+</body>
+
+</html>
